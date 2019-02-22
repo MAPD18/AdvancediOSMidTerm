@@ -14,7 +14,16 @@
 		F615ADA6221F7228005050C3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADA5221F7228005050C3 /* GameViewController.swift */; };
 		F615ADA9221F7228005050C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615ADA7221F7228005050C3 /* Main.storyboard */; };
 		F615ADAB221F722A005050C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F615ADAA221F722A005050C3 /* Assets.xcassets */; };
-		F615ADAE221F722A005050C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615ADAC221F722A005050C3 /* LaunchScreen.storyboard */; };
+		F615ADBD221F73C4005050C3 /* smw_spring_jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADB6221F73C3005050C3 /* smw_spring_jump.wav */; };
+		F615ADBE221F73C4005050C3 /* smw_vine.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADB7221F73C3005050C3 /* smw_vine.wav */; };
+		F615ADBF221F73C4005050C3 /* smw_1up.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADB8221F73C3005050C3 /* smw_1up.wav */; };
+		F615ADC0221F73C4005050C3 /* overworld.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADB9221F73C4005050C3 /* overworld.wav */; };
+		F615ADC1221F73C4005050C3 /* smw_game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADBA221F73C4005050C3 /* smw_game_over.wav */; };
+		F615ADC2221F73C4005050C3 /* star_theme.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADBB221F73C4005050C3 /* star_theme.wav */; };
+		F615ADC3221F73C4005050C3 /* smw_bonus_game_end.wav in Resources */ = {isa = PBXBuildFile; fileRef = F615ADBC221F73C4005050C3 /* smw_bonus_game_end.wav */; };
+		F615ADC6221F7421005050C3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADC4221F7420005050C3 /* Model.swift */; };
+		F615ADC7221F7421005050C3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADC5221F7421005050C3 /* Utils.swift */; };
+		F615ADC9221F7455005050C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615ADC8221F7455005050C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +35,17 @@
 		F615ADA5221F7228005050C3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F615ADA8221F7228005050C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F615ADAA221F722A005050C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F615ADAD221F722A005050C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F615ADAF221F722A005050C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F615ADB6221F73C3005050C3 /* smw_spring_jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_spring_jump.wav; sourceTree = "<group>"; };
+		F615ADB7221F73C3005050C3 /* smw_vine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_vine.wav; sourceTree = "<group>"; };
+		F615ADB8221F73C3005050C3 /* smw_1up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_1up.wav; sourceTree = "<group>"; };
+		F615ADB9221F73C4005050C3 /* overworld.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = overworld.wav; sourceTree = "<group>"; };
+		F615ADBA221F73C4005050C3 /* smw_game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_game_over.wav; sourceTree = "<group>"; };
+		F615ADBB221F73C4005050C3 /* star_theme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = star_theme.wav; sourceTree = "<group>"; };
+		F615ADBC221F73C4005050C3 /* smw_bonus_game_end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_bonus_game_end.wav; sourceTree = "<group>"; };
+		F615ADC4221F7420005050C3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F615ADC5221F7421005050C3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F615ADC8221F7455005050C3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				F615AD9C221F7228005050C3 /* MidTerm */,
+				F615ADB5221F73A4005050C3 /* Sounds */,
 				F615AD9B221F7228005050C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,10 +86,26 @@
 				F615ADA5221F7228005050C3 /* GameViewController.swift */,
 				F615ADA7221F7228005050C3 /* Main.storyboard */,
 				F615ADAA221F722A005050C3 /* Assets.xcassets */,
-				F615ADAC221F722A005050C3 /* LaunchScreen.storyboard */,
+				F615ADC8221F7455005050C3 /* LaunchScreen.storyboard */,
+				F615ADC4221F7420005050C3 /* Model.swift */,
+				F615ADC5221F7421005050C3 /* Utils.swift */,
 				F615ADAF221F722A005050C3 /* Info.plist */,
 			);
 			path = MidTerm;
+			sourceTree = "<group>";
+		};
+		F615ADB5221F73A4005050C3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F615ADB9221F73C4005050C3 /* overworld.wav */,
+				F615ADB8221F73C3005050C3 /* smw_1up.wav */,
+				F615ADBC221F73C4005050C3 /* smw_bonus_game_end.wav */,
+				F615ADBA221F73C4005050C3 /* smw_game_over.wav */,
+				F615ADB6221F73C3005050C3 /* smw_spring_jump.wav */,
+				F615ADB7221F73C3005050C3 /* smw_vine.wav */,
+				F615ADBB221F73C4005050C3 /* star_theme.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +166,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F615ADC0221F73C4005050C3 /* overworld.wav in Resources */,
 				F615ADA9221F7228005050C3 /* Main.storyboard in Resources */,
+				F615ADBD221F73C4005050C3 /* smw_spring_jump.wav in Resources */,
+				F615ADBE221F73C4005050C3 /* smw_vine.wav in Resources */,
+				F615ADBF221F73C4005050C3 /* smw_1up.wav in Resources */,
+				F615ADC2221F73C4005050C3 /* star_theme.wav in Resources */,
+				F615ADC3221F73C4005050C3 /* smw_bonus_game_end.wav in Resources */,
+				F615ADC9221F7455005050C3 /* LaunchScreen.storyboard in Resources */,
 				F615ADA0221F7228005050C3 /* GameScene.sks in Resources */,
+				F615ADC1221F73C4005050C3 /* smw_game_over.wav in Resources */,
 				F615ADAB221F722A005050C3 /* Assets.xcassets in Resources */,
-				F615ADAE221F722A005050C3 /* LaunchScreen.storyboard in Resources */,
 				F615ADA2221F7228005050C3 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F615ADC7221F7421005050C3 /* Utils.swift in Sources */,
 				F615ADA4221F7228005050C3 /* GameScene.swift in Sources */,
 				F615ADA6221F7228005050C3 /* GameViewController.swift in Sources */,
 				F615AD9E221F7228005050C3 /* AppDelegate.swift in Sources */,
+				F615ADC6221F7421005050C3 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,14 +205,6 @@
 				F615ADA8221F7228005050C3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F615ADAC221F722A005050C3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F615ADAD221F722A005050C3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
