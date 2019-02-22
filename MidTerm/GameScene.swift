@@ -29,7 +29,17 @@ class GameScene: SKScene {
 //    let imgCharacter = SKSpriteNode(imageNamed: "playerShip")
 //    let btnSpin = SKSpriteNode(imageNamed: "playerShip")
 //    let btnReset = SKSpriteNode(imageNamed: "playerShip")
-    
+    var lblBet = SKLabelNode()
+    var bet = 10
+    var lblBetValue : Int {
+        set(newBet) {
+            self.bet = newBet
+            lblBet.text = "Bet x\(newBet)"
+        }
+        get {
+            return self.bet
+        }
+    }
     
     override func didMove(to view: SKView) {
 
@@ -125,7 +135,7 @@ class GameScene: SKScene {
         lblGoodLuck.fontColor = SKColor.blue
         self.addChild(lblGoodLuck)
         
-        let lblBet = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
+        lblBet = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
         lblBet.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.08)
         lblBet.zPosition = 2
         lblBet.text = "Bet x10"
@@ -139,6 +149,7 @@ class GameScene: SKScene {
         lblBetPlus.text = "+"
         lblBetPlus.fontSize = 70
         lblBetPlus.fontColor = SKColor.white
+        lblBetPlus.name = "plus"
         self.addChild(lblBetPlus)
         
         let lblBetMinus = SKLabelNode(fontNamed: "HelveticaNeue")
@@ -147,6 +158,7 @@ class GameScene: SKScene {
         lblBetMinus.text = "-"
         lblBetMinus.fontSize = 80
         lblBetMinus.fontColor = SKColor.white
+        lblBetMinus.name = "minus"
         self.addChild(lblBetMinus)
     }
     
@@ -156,13 +168,12 @@ class GameScene: SKScene {
             let pointOfTouch = touch.location(in: self)
             let tappedNode = atPoint(pointOfTouch)
             
-            if tappedNode.name == "play" {
-                
-                let newScene = GameScene(size: self.size)
-                newScene.scaleMode = self.scaleMode
-                let transitionEffect = SKTransition.fade(withDuration: 0.5)
-                self.view!.presentScene(newScene, transition: transitionEffect)
-                
+            if tappedNode.name == "plus" {
+                lblBetValue = bet + 1
+            } else if tappedNode.name == "minus" {
+                if bet > 1 {
+                    lblBetValue = bet - 1
+                }
             }
         }
     }
