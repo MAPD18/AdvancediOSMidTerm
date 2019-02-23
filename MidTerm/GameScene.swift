@@ -63,84 +63,46 @@ class GameScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
-
-        let background = SKSpriteNode(imageNamed: "background")
-        background.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.5)
-        background.zPosition = 0
+        
+        let background = GameObject(imageString: "background", sceneSize: self.size, initialScale: 1, initialPositionX: 0.5, initialPOsitionY: 0.5, initialPOsitionZ: 0)
         background.size = self.size
         self.addChild(background)
         
-        let logo = SKSpriteNode(imageNamed: "Logo")
-        logo.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.85)
-        logo.setScale(0.54)
-        logo.zPosition = 1
+        let logo = GameObject(imageString: "Logo", sceneSize: self.size, initialScale: 0.54, initialPositionX: 0.5, initialPOsitionY: 0.85, initialPOsitionZ: 1)
         self.addChild(logo)
         
-        block1 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        block1.position = CGPoint(x: self.size.width * 0.2, y: self.size.height * 0.4)
-        block1.setScale(0.15)
-        block1.zPosition = 5
+        block1 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.2, initialPOsitionY: 0.4, initialPOsitionZ: 5)
         self.addChild(block1)
         
-        item1 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        item1.position = CGPoint(x: self.size.width * 0.2, y: self.size.height * 0.4)
-        item1.setScale(0.15)
-        item1.zPosition = 3
+        item1 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.2, initialPOsitionY: 0.4, initialPOsitionZ: 3)
         self.addChild(item1)
         
-        block2 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        block2.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.4)
-        block2.setScale(0.15)
-        block2.zPosition = 5
+        block2 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.5, initialPOsitionY: 0.4, initialPOsitionZ: 5)
         self.addChild(block2)
         
-        item2 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        item2.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.4)
-        item2.setScale(0.15)
-        item2.zPosition = 3
+        item2 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.5, initialPOsitionY: 0.4, initialPOsitionZ: 3)
         self.addChild(item2)
         
-        block3 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        block3.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.4)
-        block3.setScale(0.15)
-        block3.zPosition = 5
+        block3 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.8, initialPOsitionY: 0.4, initialPOsitionZ: 5)
         self.addChild(block3)
         
-        item3 = SKSpriteNode(imageNamed: "Question_Block_Art_-_New_Super_Mario_Bros")
-        item3.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.4)
-        item3.setScale(0.15)
-        item3.zPosition = 3
+        item3 = GameObject(imageString: "Question_Block_Art_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.15, initialPositionX: 0.8, initialPOsitionY: 0.4, initialPOsitionZ: 3)
         self.addChild(item3)
         
-        let coin = SKSpriteNode(imageNamed: "Coin_-_New_Super_Mario_Bros")
-        coin.position = CGPoint(x: self.size.width * 0.07, y: self.size.height * 0.66)
-        coin.setScale(0.03)
-        coin.zPosition = 1
+        let coin = GameObject(imageString: "Coin_-_New_Super_Mario_Bros", sceneSize: self.size, initialScale: 0.03, initialPositionX: 0.07, initialPOsitionY: 0.66, initialPOsitionZ: 1)
         self.addChild(coin)
         
-        let toad = SKSpriteNode(imageNamed: "toad")
-        toad.position = CGPoint(x: self.size.width * 0.2, y: self.size.height * 0.21)
-        toad.setScale(0.13)
-        toad.zPosition = 1
+        let toad = GameObject(imageString: "toad", sceneSize: self.size, initialScale: 0.13, initialPositionX: 0.2, initialPOsitionY: 0.21, initialPOsitionZ: 1)
         self.addChild(toad)
         
-        let life = SKSpriteNode(imageNamed: "1up")
-        life.position = CGPoint(x: self.size.width * 0.2, y: self.size.height * 0.065)
-        life.setScale(0.05)
-        life.zPosition = 1
+        let life = GameObject(imageString: "1up", sceneSize: self.size, initialScale: 0.05, initialPositionX: 0.2, initialPOsitionY: 0.065, initialPOsitionZ: 1)
         self.addChild(life)
         
-        let pow = SKSpriteNode(imageNamed: "POW_Block_-_New_Super_Mario_Bros_Wii")
-        pow.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.065)
-        pow.setScale(0.06)
-        pow.zPosition = 1
-        pow.name = "pow"
+        let pow = GameObject(imageString: "POW_Block_-_New_Super_Mario_Bros_Wii", sceneSize: self.size, initialScale: 0.06, initialPositionX: 0.8, initialPOsitionY: 0.065, initialPOsitionZ: 1, name: "pow")
         self.addChild(pow)
         
-        let balloon = SKSpriteNode(imageNamed: "1265px-Speech_balloon.svg")
-        balloon.position = CGPoint(x: self.size.width * 0.6, y: self.size.height * 0.25)
+        let balloon = GameObject(imageString: "1265px-Speech_balloon.svg", sceneSize: self.size, initialScale: 1, initialPositionX: 0.6, initialPOsitionY: 0.25, initialPOsitionZ: 1)
         balloon.size = CGSize(width: 480, height: 200)
-        balloon.zPosition = 1
         self.addChild(balloon)
         
         lblPlayerStats = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
@@ -424,12 +386,13 @@ class GameScene: SKScene {
         let jackPotWin = Int(arc4random_uniform(UInt32(51))) + 1
         if (jackPotTry == jackPotWin) {
             Model.instance.playSound(sound: Constant.star_theme)
-            let alert = UIAlertController(title: "JACKPOT!!", message: "You won the $\(jackpot) Jackpot!!", preferredStyle: .alert)
-            alert.addAction( UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                Model.instance.updateCoins(label: self.lblCoins, coins: (self.currentCoins + self.jackpot))
-                self.jackpot = 1000
-                self.lblJackpot.text = "Jackpot: \(self.jackpot)"
-            }))
+            lblGoodLuck.text = "You won the $\(jackpot) Jackpot!!"
+//            let alert = UIAlertController(title: "JACKPOT!!", message: "You won the $\(jackpot) Jackpot!!", preferredStyle: .alert)
+//            alert.addAction( UIAlertAction(title: "OK", style: .default, handler: { (_) in
+//                Model.instance.updateCoins(label: self.lblCoins, coins: (self.currentCoins + self.jackpot))
+//                self.jackpot = 1000
+//                self.lblJackpot.text = "Jackpot: \(self.jackpot)"
+//            }))
             //self.present(alert, animated: true, completion: nil)
         }
     }
