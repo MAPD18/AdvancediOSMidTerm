@@ -24,6 +24,7 @@
 		F615ADC6221F7421005050C3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADC4221F7420005050C3 /* Model.swift */; };
 		F615ADC7221F7421005050C3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADC5221F7421005050C3 /* Utils.swift */; };
 		F615ADC9221F7455005050C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615ADC8221F7455005050C3 /* LaunchScreen.storyboard */; };
+		F615ADCB221F9425005050C3 /* SpriteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615ADCA221F9424005050C3 /* SpriteObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F615ADC4221F7420005050C3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F615ADC5221F7421005050C3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F615ADC8221F7455005050C3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F615ADCA221F9424005050C3 /* SpriteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F615AD9F221F7228005050C3 /* GameScene.sks */,
 				F615ADA1221F7228005050C3 /* Actions.sks */,
 				F615ADA3221F7228005050C3 /* GameScene.swift */,
+				F615ADCA221F9424005050C3 /* SpriteObject.swift */,
 				F615ADA5221F7228005050C3 /* GameViewController.swift */,
 				F615ADA7221F7228005050C3 /* Main.storyboard */,
 				F615ADAA221F722A005050C3 /* Assets.xcassets */,
@@ -191,6 +194,7 @@
 				F615ADC7221F7421005050C3 /* Utils.swift in Sources */,
 				F615ADA4221F7228005050C3 /* GameScene.swift in Sources */,
 				F615ADA6221F7228005050C3 /* GameViewController.swift in Sources */,
+				F615ADCB221F9425005050C3 /* SpriteObject.swift in Sources */,
 				F615AD9E221F7228005050C3 /* AppDelegate.swift in Sources */,
 				F615ADC6221F7421005050C3 /* Model.swift in Sources */,
 			);
